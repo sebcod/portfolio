@@ -14,14 +14,17 @@
   outline: none;
   border: none;
   text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 *::-moz-selection {
   color: #fafeff;
-  background: #00c1ec;
+  background: rgba(0, 193, 236, 0.7803921569);
 }
 *::selection {
   color: #fafeff;
-  background: #00c1ec;
+  background: rgba(0, 193, 236, 0.7803921569);
 }
 
 html {
@@ -64,7 +67,7 @@ main {
 }
 .button:hover {
   letter-spacing: 1px;
-  color: #00c1ec;
+  color: rgba(0, 193, 236, 0.7803921569);
 }
 
 .navigation {
@@ -114,28 +117,21 @@ main {
   cursor: pointer;
   display: flex;
   transition: 0.5s;
+  width: 200px;
 }
 .navigation .nav-portfolio:hover .nav-projects,
 .navigation .nav-portfolio .nav-projects:hover {
   visibility: visible;
   opacity: 1;
 }
-.navigation .nav-portfolio:hover .nav-projects li,
-.navigation .nav-portfolio .nav-projects:hover li {
-  transform: rotatey(0deg);
-}
 .navigation .nav-portfolio .nav-projects {
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  padding: 0 40px;
-  width: 300px;
-  transform: translateX(70px);
+  transform: translateX(100px);
   transition: 0.3s;
-  perspective: 500px;
 }
 .navigation .nav-portfolio .nav-projects li {
-  transform: rotatey(30deg) scaleX(1.2);
   transform-origin: center;
   transition: 0.3s;
 }
@@ -181,7 +177,7 @@ main {
   display: grid;
   align-items: center;
   justify-items: center;
-  height: 95%;
+  height: 100%;
 }
 .home .home-main .main-content {
   -webkit-user-select: none;
@@ -209,7 +205,7 @@ main {
   height: 225px;
   width: 225px;
   border-radius: 50%;
-  border: 1px #00c1ec solid;
+  border: 1px rgba(0, 193, 236, 0.7803921569) solid;
   top: -40px;
   left: -180px;
   z-index: -1;
@@ -274,24 +270,29 @@ main {
 
 .scroll-bottom a {
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
   top: 50%;
-  font-size: 3rem;
-  color: rgb(184, 183, 183);
+  font-size: 4rem;
+  color: rgba(0, 193, 236, 0.7803921569);
   transition: 0.25s;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  padding: 0 14px;
+}
+.scroll-bottom a span {
+  line-height: 1;
 }
 .scroll-bottom a:hover {
+  font-size: 4.8rem;
+}
+.scroll-bottom a:active {
   font-size: 4rem;
 }
 .scroll-bottom .left {
-  left: 15px;
+  left: 20px;
 }
 .scroll-bottom .right {
-  right: -24px;
+  right: 20px;
 }
 
 .contact {
@@ -364,7 +365,7 @@ main {
   content: "";
   height: 70px;
   width: 70px;
-  border: 1px #00c1ec solid;
+  border: 1px rgba(0, 193, 236, 0.7803921569) solid;
   border-radius: 50%;
   position: absolute;
   top: -22px;
@@ -379,7 +380,7 @@ main {
   background: none;
   font-family: "font-1", sans-serif;
   font-size: 1.2rem;
-  border-bottom: 1px solid #00c1ec;
+  border-bottom: 1px solid rgba(0, 193, 236, 0.7803921569);
   border-radius: 5px;
 }
 @media screen and (min-width: 1200px) {
@@ -584,7 +585,7 @@ main {
   content: "";
   height: 24px;
   width: 24px;
-  border: 1px #00c1ec solid;
+  border: 1px rgba(0, 193, 236, 0.7803921569) solid;
   border-radius: 50%;
   position: absolute;
   top: 1px;
@@ -596,12 +597,15 @@ main {
   position: absolute;
   height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .project:after {
   content: "";
   height: 340px;
   width: 340px;
-  border: 1px solid #00c1ec;
+  border: 1px solid rgba(0, 193, 236, 0.7803921569);
   border-radius: 50%;
   position: absolute;
   bottom: -200px;
@@ -659,7 +663,7 @@ main {
   }
 }
 .project .project-main {
-  margin: 8rem 1rem 0;
+  width: 90%;
   display: grid;
   grid-template-columns: 33% 67%;
   position: relative;
@@ -696,7 +700,7 @@ main {
   font-size: 3rem;
   margin-bottom: 12px;
   font-family: "font-2", serif;
-  color: #00c1ec;
+  color: rgba(0, 193, 236, 0.7803921569);
   transform: scaleX(0);
   animation: transformTitle 1.5s ease forwards;
   transform-origin: 150%;
@@ -846,7 +850,7 @@ main {
   align-items: center;
   justify-content: center;
   color: #fafeff;
-  background: #00c1ec;
+  background: rgba(0, 193, 236, 0.7803921569);
 }
 @media screen and (max-width: 410px) {
   .project .button-container a .button {
@@ -855,7 +859,7 @@ main {
   }
 }
 .project .button-container a .button:hover {
-  color: #00c1ec;
+  color: rgba(0, 193, 236, 0.7803921569);
   background: #e7f7fe;
 }
 .project .random-circle {
@@ -916,7 +920,7 @@ main {
 .cursor {
   width: 62px;
   height: 62px;
-  border: 1px solid #00c1ec;
+  border: 1px solid rgba(0, 193, 236, 0.7803921569);
   border-radius: 50%;
   position: absolute;
   transform: translate(-50%, -50%);

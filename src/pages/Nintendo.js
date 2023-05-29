@@ -5,7 +5,7 @@ import Mouse from "../components/Mouse";
 import Navigation from "../components/Navigation";
 import Project from "../components/Project";
 
-const Project1 = () => {
+const Nintendo = () => {
   return (
     <main>
       <Mouse />
@@ -13,10 +13,10 @@ const Project1 = () => {
         <Navigation />
         <Logo />
         <Project projectNumber={0} />
-        <Buttons left={"/"} right={"/projet-2"} />
+        <Buttons left={"/"} right={"/ScottoDiCesare"} />
       </div>
     </main>
   );
 };
 
-export default Project1;
+export default Nintendo;

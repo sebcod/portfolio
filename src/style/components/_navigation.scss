@@ -22,30 +22,38 @@
       50% {
         transform: scale(1.2);
       }
+
       100% {
         transform: scale(1);
       }
     }
-    @media screen and (max-width: 430px){
+
+    @media screen and (max-width: 430px) {
       height: 50px;
       width: 50px;
     }
   }
+
   .nav-active {
     color: $black;
   }
+
   ul:hover li:not(:hover) {
     opacity: .5;
   }
+
   ul:hover li:hover {
     color: $black;
   }
 
   .nav-portfolio {
+
+
     cursor: pointer;
     display: flex;
-    // padding-right: 6rem;
     transition: .5s;
+    width: 200px;
+    //border: solid blue;
 
     &:hover .nav-projects,
     .nav-projects:hover {
@@ -53,8 +61,11 @@
       visibility: visible;
       opacity: 1;
 
+
       li {
-        transform: rotatey(0deg)
+        &:hover {
+          //color: red;
+        }
       }
     }
 
@@ -62,14 +73,11 @@
       position: absolute;
       visibility: hidden;
       opacity: 0;
-      padding: 0 40px;
-      width: 300px;
-      transform: translateX(70px);
-      transition: .3s ;
-      perspective: 500px;
+      transform: translateX(100px);
+      transition: .3s;
 
       li {
-        transform: rotatey(30deg) scaleX(1.2);
+        //border: solid blue;
         transform-origin: center;
         transition: .3s;
       }

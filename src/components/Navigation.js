@@ -16,34 +16,34 @@ const Navigation = () => {
           portfolio
           <ul className="nav-projects">
             <NavLink
-              to="/projet-1"
-              className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
-            >
-              <li>ComeUp</li>
-            </NavLink>
-            <NavLink
-              to="/projet-2"
-              className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
-            >
-              <li>Mountain blog</li>
-            </NavLink>
-            <NavLink
-              to="/projet-3"
-              className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
-            >
-              <li>Your restaurant</li>
-            </NavLink>
-            <NavLink
-              to="/projet-4"
+              to="/Nintendo"
               className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
             >
               <li>Nintendo</li>
             </NavLink>
             <NavLink
-              to="/projet-5"
+              to="/ScottoDiCesare"
               className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
             >
-              <li>ScottoDiCesare</li>
+              <li>Scotto Di Cesare</li>
+            </NavLink>
+            <NavLink
+              to="/YourResto"
+              className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
+            >
+              <li>Your resto</li>
+            </NavLink>
+            <NavLink
+              to="/YourBlog"
+              className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
+            >
+              <li>Your blog</li>
+            </NavLink>
+            <NavLink
+              to="/ComeUp"
+              className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
+            >
+              <li>ComeUp</li>
             </NavLink>
           </ul>
         </li>

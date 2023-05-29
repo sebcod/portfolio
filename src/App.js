@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Project1 from "./pages/Project1";
-import Project2 from "./pages/Project2";
-import Project3 from "./pages/Project3";
-import Project4 from "./pages/Project4";
-import Project5 from "./pages/Project5";
+import Nintendo from "./pages/Nintendo";
+import ScottoDiCesare from "./pages/ScottoDiCesare";
+import YourResto from "./pages/YourResto";
+import YourBlog from "./pages/YourBlog";
+import ComeUp from "./pages/ComeUp";
 import NotFound from "./pages/NotFound";
 import { AnimatePresence } from "framer-motion";
 
@@ -15,11 +15,11 @@ const App = () => {
       <AnimatePresence>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projet-1" element={<Project1 />} />
-          <Route path="/projet-2" element={<Project2 />} />
-          <Route path="/projet-3" element={<Project3 />} />
-          <Route path="/projet-4" element={<Project4 />} />
-          <Route path="/projet-5" element={<Project5 />} />
+          <Route path="/Nintendo" element={<Nintendo />} />
+          <Route path="/ScottoDiCesare" element={<ScottoDiCesare />} />
+          <Route path="/YourResto" element={<YourResto />} />
+          <Route path="/YourBlog" element={<YourBlog />} />
+          <Route path="/ComeUp" element={<ComeUp />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
