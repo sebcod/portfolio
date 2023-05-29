@@ -26,7 +26,7 @@ const SocialNetwork = () => {
           onMouseOver={anim}
         >
           <li>
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
           </li>
         </a>
         {/* <a

@@ -13,7 +13,7 @@ const ScottoDiCesare = () => {
         <Navigation />
         <Logo />
         <Project projectNumber={1} />
-        <Buttons left={"/Nintendo"} right={"/YourResto"} />
+        <Buttons left={"/Nintendo"} right={"/YourResto"} projectNumber={"1"} />
       </div>
     </main>
   );
