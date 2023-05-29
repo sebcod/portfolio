@@ -11,7 +11,7 @@
 $font-1: "font-1", sans-serif;
 $font-2: "font-2", serif;
 
-$color-1: #fafeff;
+$color-1: #f5f5f5;
 $color-2: #00c1ecc7;
 $color-3: #e7f7fe;
 $color-4: rgb(141, 141, 141);
@@ -66,17 +66,22 @@ main {
 }
 
 .button {
-  background: $color-3;
   height: 55px;
   width: 126px;
-  border-radius: 50px;
+  border-radius: 52.5px;
   margin-top: 20px;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.3s;
+  opacity: 100%;
 
   &:hover {
     letter-spacing: 1px;
-    color: $color-2;
+    transform: scale(1.1);
+  }
+
+  &:active {
+    letter-spacing: 1px;
+    transform: scale(1);
   }
 }

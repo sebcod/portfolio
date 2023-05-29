@@ -59,9 +59,16 @@ const Project = ({ projectNumber }) => {
       variants={variants}
     >
       <div className="project-content">
-        <h1>{currentProject.title}</h1>
+        <h1 style={{ color: currentProject.color }}>{currentProject.title}</h1>
         <p>{currentProject.date}</p>
-        <ul className="langueges">
+        <span
+          className="cercle-1"
+          style={{ border: "1px solid" + currentProject.color }}
+        ></span>
+        <span className="cercle-2" style={{ background: currentProject.color }}>
+          sss
+        </span>
+        <ul className="languages">
           {currentProject.languages.map((item) => {
             return <li key={item}>{item}</li>;
           })}
@@ -90,14 +97,24 @@ const Project = ({ projectNumber }) => {
             href={currentProject.link}
             target="_blank"
             rel="noopener noreferrer"
-            class="hover"
+            className="hover"
           >
-            <span className="button">voir le site</span>
+            <span
+              className="button"
+              style={{ background: currentProject.color }}
+            >
+              see website
+            </span>
           </a>
         </div>
         <span
           className="random-circle"
-          style={{ left, top, transform: size }}
+          style={{
+            left,
+            top,
+            transform: size,
+            background: currentProject.color,
+          }}
         ></span>
       </motion.div>
     </motion.div>

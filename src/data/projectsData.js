@@ -7,6 +7,7 @@ export const projectsData = [
     infos: "Clone of the nintendo.fr home page",
     img: "./assets/img/nintendo.jpg",
     link: "https://sebcod-nintendo.netlify.app",
+    color: "#E60012",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const projectsData = [
     infos: "Clone of the groupe-scottodicesare.com home page",
     img: "./assets/img/ScottoDiCesare.jpg",
     link: "https://sebcod-scottodicesare.netlify.app/",
+    color: "#0E0E0E",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const projectsData = [
     infos: "Personal creation of a website for a restaurant",
     img: "./assets/img/LeResto.jpg",
     link: "https://sebcod-your-resto.netlify.app/",
+    color: "#b36700",
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ export const projectsData = [
     infos: "Personal development of a blog",
     img: "./assets/img/LaMontagne.jpg",
     link: "https://sebcod-your-blog.netlify.app/",
+    color: "#12241F",
   },
   {
     id: 5,
@@ -43,5 +47,6 @@ export const projectsData = [
     infos: "Clone of the ComeUp.fr home page, created in html css",
     img: "./assets/img/comeup.jpg",
     link: "https://sebcod-comeup.netlify.app/",
+    color: "#FFEE66",
   },
 ];

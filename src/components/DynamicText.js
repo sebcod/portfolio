@@ -33,7 +33,7 @@ const DynamicText = () => {
         } else {
           letterIndex = 0;
           wordIndex++;
-          setTimeout(loop, 2000);
+          setTimeout(loop, 1800);
         }
       }, 80);
     };

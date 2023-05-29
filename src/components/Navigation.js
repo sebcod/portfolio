@@ -9,11 +9,11 @@ const Navigation = () => {
           to="/"
           className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
         >
-          <li>accueil</li>
+          <li>Home</li>
         </NavLink>
 
         <li className="nav-portfolio">
-          portfolio
+          Portfolio
           <ul className="nav-projects">
             <NavLink
               to="/Nintendo"

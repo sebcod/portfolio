@@ -1,27 +1,28 @@
 .social-network {
   position: absolute;
-  right: 1rem;
-  top: 0;
-  width: 20%;
+  right: 2rem;
+  top: 3rem;
   font-size: 1.8rem;
-
-  @media screen and (max-width: 650px) {
-    width: 30%;
-  }
+  transform: translateY(-50%);
 
   ul {
     display: flex;
     width: 100%;
-    min-width: 100px;
     justify-content: space-around;
 
-    @media screen and (max-width: 450px) {
-      min-width: 100%;
-    }
-
     a {
-      padding: 1rem;
-      transition: 1.1s ease-out;
+      transition: 0.3s ease-out;
+      width: 100%;
+      height: 100%;
+
+      i {
+        color: $black;
+
+        &:hover {
+          transform: scale(1.4);
+          transition: 0.3s ease-out;
+        }
+      }
     }
   }
 }
