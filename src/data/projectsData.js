@@ -47,7 +47,7 @@ export const projectsData = [
     infos: "Clone of the ComeUp.fr home page, created in html css",
     img: "./assets/img/comeup.jpg",
     link: "https://sebcod-comeup.netlify.app/",
-    color: "#101010",
-    // color: "#FFEE66",
+    color: "#e4d357",
+    //color: "#FFEE66",
   },
 ];

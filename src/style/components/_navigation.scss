@@ -5,16 +5,17 @@
   font-size: 1.4rem;
   line-height: 28px;
   color: $color-4;
+  width: 100px;
 
-  &:before {
-    content: '';
+  .cercle-navigation {
     position: absolute;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
-    background: $color-3;
-    top: -150px;
-    left: -160px;
+    background: $color-2;
+    opacity: 10%;
+    top: -300px;
+    left: -260px;
     z-index: -1;
     animation: navAnim 20s infinite alternate;
 
@@ -35,7 +36,40 @@
   }
 
   .nav-active {
-    color: $black;
+    #nav-li-nintendo {
+      color: $color-Nintendo;
+      transform: scale(1.2);
+      letter-spacing: 1px;
+      transform: translateX(5px);
+    }
+
+    #nav-li-ScottoDiCesare {
+      color: $color-ScottoDiCesare;
+      transform: scale(1.2);
+      letter-spacing: 1px;
+      transform: translateX(5px);
+    }
+
+    #nav-li-YourResto {
+      color: $Color-YourResto;
+      transform: scale(1.2);
+      letter-spacing: 1px;
+      transform: translateX(5px);
+    }
+
+    #nav-li-YourBlog {
+      color: $color-YourBlog;
+      transform: scale(1.2);
+      letter-spacing: 1px;
+      transform: translateX(5px);
+    }
+
+    #nav-li-ComeUp {
+      color: $color-ComeUp;
+      transform: scale(1.2);
+      letter-spacing: 1px;
+      transform: translateX(5px);
+    }
   }
 
   ul:hover li:not(:hover) {
@@ -47,25 +81,17 @@
   }
 
   .nav-portfolio {
-
-
     cursor: pointer;
     display: flex;
     transition: .5s;
     width: 200px;
-    //border: solid blue;
+
 
     &:hover .nav-projects,
     .nav-projects:hover {
 
       visibility: visible;
       opacity: 1;
-
-      li {
-        &:hover {
-          //color: red;
-        }
-      }
     }
 
     .nav-projects {
@@ -74,12 +100,46 @@
       opacity: 0;
       transform: translateX(100px);
       transition: .3s;
+      width: 200px;
 
       li {
-        //border: solid blue;
-        transform-origin: center;
         transition: .3s;
       }
     }
+  }
+
+  #nav-li-nintendo:hover {
+    color: $color-Nintendo;
+    transform: scale(1.2);
+    letter-spacing: 1px;
+    transform: translateX(5px);
+  }
+
+  #nav-li-ScottoDiCesare:hover {
+    color: $color-ScottoDiCesare;
+    transform: scale(1.2);
+    letter-spacing: 1px;
+    transform: translateX(5px);
+  }
+
+  #nav-li-YourResto:hover {
+    color: $Color-YourResto;
+    transform: scale(1.2);
+    letter-spacing: 1px;
+    transform: translateX(5px);
+  }
+
+  #nav-li-YourBlog:hover {
+    color: $color-YourBlog;
+    transform: scale(1.2);
+    letter-spacing: 1px;
+    transform: translateX(5px);
+  }
+
+  #nav-li-ComeUp:hover {
+    color: $color-ComeUp;
+    transform: scale(1.2);
+    letter-spacing: 1px;
+    transform: translateX(5px);
   }
 }

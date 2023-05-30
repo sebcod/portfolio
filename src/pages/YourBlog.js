@@ -10,7 +10,7 @@ const YourBlog = () => {
     <main>
       <Mouse />
       <div className="project">
-        <Navigation />
+        <Navigation projectNumber={"3"} />
         <Logo />
         <Project projectNumber={3} />
         <Buttons left={"/YourResto"} right={"/ComeUp"} projectNumber={"3"} />

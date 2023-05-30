@@ -65,9 +65,10 @@ const Project = ({ projectNumber }) => {
           className="cercle-1"
           style={{ border: "1px solid" + currentProject.color }}
         ></span>
-        <span className="cercle-2" style={{ background: currentProject.color }}>
-          sss
-        </span>
+        <span
+          className="cercle-2"
+          style={{ background: currentProject.color }}
+        ></span>
         <ul className="languages">
           {currentProject.languages.map((item) => {
             return <li key={item}>{item}</li>;
