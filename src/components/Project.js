@@ -71,7 +71,11 @@ const Project = ({ projectNumber }) => {
         ></span>
         <ul className="languages">
           {currentProject.languages.map((item) => {
-            return <li key={item}>{item}</li>;
+            return (
+              <li key={item}>
+                <img src={item} alt="languages" />
+              </li>
+            );
           })}
         </ul>
       </div>
