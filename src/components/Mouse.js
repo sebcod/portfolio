@@ -3,7 +3,6 @@ import { projectsData } from "../data/projectsData";
 
 const Mouse = (props) => {
   const [currentProject] = useState(projectsData[props.projectNumber]);
-  console.log(props.projectNumber);
 
   useEffect(() => {
     const cursor = document.querySelector(".cursor");

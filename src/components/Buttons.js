@@ -11,12 +11,12 @@ const Buttons = (props) => {
           <span>&#10093;</span>
         </NavLink>
       )}
-      {props.projectNumber && props.left && (
+      {props.projectNumber !== undefined && props.left && (
         <NavLink to={props.left} className="left hover">
           <span style={{ color: currentProject.color }}>&#10092;</span>
         </NavLink>
       )}
-      {props.projectNumber && props.right && (
+      {props.projectNumber !== undefined && props.right && (
         <NavLink to={props.right} className="right hover">
           <span style={{ color: currentProject.color }}>&#10093;</span>
         </NavLink>

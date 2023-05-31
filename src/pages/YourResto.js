@@ -16,7 +16,7 @@ const YourResto = () => {
         <Buttons
           left={"/ScottoDicesare"}
           right={"/YourBlog"}
-          projectNumber={"2"}
+          projectNumber={2}
         />
       </div>
     </main>

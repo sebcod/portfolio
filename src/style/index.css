@@ -64,6 +64,7 @@ main {
   line-height: 28px;
   color: rgb(141, 141, 141);
   width: 100px;
+  z-index: 10;
 }
 .navigation .cercle-navigation {
   position: absolute;

@@ -13,7 +13,7 @@ const ComeUp = () => {
         <Navigation projectNumber={4} />
         <Logo />
         <Project projectNumber={4} />
-        <Buttons left={"/YourBlog"} projectNumber={"4"} />
+        <Buttons left={"/YourBlog"} projectNumber={4} />
       </div>
     </main>
   );
