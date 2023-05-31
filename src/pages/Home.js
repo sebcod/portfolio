@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navigation from "../components/Navigation";
 import Mouse from "../components/Mouse";
 import SocialNetwork from "../components/SocialNetwork";
 import DynamicText from "../components/DynamicText";
 import Buttons from "../components/Buttons";
 import { motion } from "framer-motion";
+import { projectsData } from "../data/projectsData";
 
 const Home = () => {
+  const [currentProject] = useState(projectsData[0]);
+  const [left, setLeft] = useState();
+  const [top, setTop] = useState();
+  const [size, setSize] = useState();
+
+  useEffect(() => {
+    setLeft(Math.floor(Math.random() * 200 + 1100) + "px");
+    setTop(Math.floor(Math.random() * 200 + 600) + "px");
+    setSize("scale(" + (Math.random() + 0.7) + ")");
+  }, []);
+
   const variants = {
     initial: {
       opacity: 0,
@@ -25,7 +37,7 @@ const Home = () => {
   };
   return (
     <div>
-      <Mouse />
+      <Mouse projectNumber={0} />
       <motion.div
         className="home"
         initial="initial"
@@ -33,35 +45,32 @@ const Home = () => {
         exit="exit"
         variants={variants}
       >
-        <Navigation />
+        <Navigation projectNumber={0} />
         <SocialNetwork />
-        <div className="home-main">
+        <div
+          className="home-main"
+          style={{
+            backgroundColor: currentProject.background,
+            color: currentProject.color,
+          }}
+        >
           <div className="main-content">
-            <motion.h1
-              drag
-              dragConstraints={{
-                left: -250,
-                right: 950,
-                top: -200,
-                bottom: 250,
-              }}
-            >
-              Sébastien Codus
-            </motion.h1>
-            <motion.h2
-              drag
-              dragConstraints={{
-                left: -250,
-                right: 950,
-                top: -200,
-                bottom: 250,
-              }}
-            >
+            <h1>Sébastien Codus</h1>
+            <h2>
               <DynamicText />
-            </motion.h2>
+            </h2>
           </div>
         </div>
-        <Buttons right={"/Nintendo"} />
+        <Buttons projectNumber={0} right={"/Nintendo"} />
+        <span
+          className="random-circle"
+          style={{
+            left,
+            top,
+            transform: size,
+            background: currentProject.color,
+          }}
+        ></span>
       </motion.div>
     </div>
   );

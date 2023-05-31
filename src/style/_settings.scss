@@ -57,8 +57,8 @@ $color-ComeUp: #e4d357;
   //box-shadow: 0 0 0 3px red inset;
 
   &::selection {
-    color: $color-1;
-    background: $color-2;
+    //color: $color-1;
+    //background: $color-2;
   }
 }
 
@@ -66,10 +66,14 @@ html {
   scroll-behavior: unset;
 }
 
-a,
-a:visited {
-  color: $color-4;
+a {
+  text-decoration: none;
+
+  a:visited {
+    //color: initial;
+  }
 }
+
 
 body {
   font-family: $font-1;

@@ -7,10 +7,10 @@ import Project from "../components/Project";
 import { projectsData } from "../data/projectsData";
 
 const ScottoDiCesare = () => {
-  const [currentProject] = useState(projectsData[1]);
+  const [currentProject] = useState(projectsData[2]);
   return (
     <main>
-      <Mouse projectNumber={1} />
+      <Mouse projectNumber={2} />
       <div
         className="project"
         style={{
@@ -18,10 +18,10 @@ const ScottoDiCesare = () => {
           color: currentProject.color,
         }}
       >
-        <Navigation projectNumber={1} />
+        <Navigation projectNumber={2} />
         <Logo />
-        <Project projectNumber={1} />
-        <Buttons left={"/Nintendo"} right={"/YourResto"} projectNumber={1} />
+        <Project projectNumber={2} />
+        <Buttons left={"/Nintendo"} right={"/YourResto"} projectNumber={2} />
       </div>
     </main>
   );

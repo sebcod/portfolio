@@ -7,11 +7,11 @@ import Project from "../components/Project";
 import { projectsData } from "../data/projectsData";
 
 const ComeUp = () => {
-  const [currentProject] = useState(projectsData[4]);
+  const [currentProject] = useState(projectsData[5]);
 
   return (
     <main>
-      <Mouse projectNumber={4} />
+      <Mouse projectNumber={5} />
       <div
         className="project"
         style={{
@@ -19,10 +19,10 @@ const ComeUp = () => {
           color: currentProject.color,
         }}
       >
-        <Navigation projectNumber={4} />
+        <Navigation projectNumber={5} />
         <Logo />
-        <Project projectNumber={4} />
-        <Buttons left={"/YourBlog"} projectNumber={4} />
+        <Project projectNumber={5} />
+        <Buttons left={"/YourBlog"} projectNumber={5} />
       </div>
     </main>
   );

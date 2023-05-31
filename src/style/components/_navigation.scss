@@ -1,12 +1,39 @@
 .navigation {
+  //border: solid;
+  padding: 10px;
   position: absolute;
   top: 2rem;
   left: 2rem;
   font-size: 1.4rem;
   line-height: 28px;
-  color: $color-4;
   width: 100px;
-  z-index: 10;
+  //z-index: 10;
+
+
+  //color: $color-4;
+
+
+  ul {
+    opacity: 1;
+
+    li {
+      transition: .3s;
+    }
+  }
+
+  ul:hover li:not(:hover) {
+    opacity: 1;
+    // color: $color-4
+  }
+
+  ul:hover li:hover {
+    //color: $color-4;
+    opacity: 1;
+    // transform: scale(1.2);
+    // letter-spacing: 1px;
+    transform: translateX(2px);
+    // text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+  }
 
   .cercle-navigation {
     position: absolute;
@@ -14,7 +41,7 @@
     width: 400px;
     border-radius: 50%;
     background: $color-2;
-    opacity: 10%;
+    opacity: 50%;
     top: -300px;
     left: -260px;
     z-index: -1;
@@ -83,18 +110,12 @@
     }
   }
 
-  ul:hover li:not(:hover) {
-    opacity: .5;
-  }
 
-  ul:hover li:hover {
-    color: $black;
-  }
 
   .nav-portfolio {
     //cursor: pointer;
     display: flex;
-    transition: .5s;
+    //transition: .5s;
     width: 200px;
 
 

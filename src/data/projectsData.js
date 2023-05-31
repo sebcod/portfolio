@@ -1,5 +1,22 @@
 export const projectsData = [
   {
+    id: 0,
+    title: "Home",
+    date: "2023",
+    languages: [
+      "https://img.shields.io/badge/-JavaScript-FFF?&logo=JavaScript&logoColor=F7DF1E",
+      "https://img.shields.io/badge/-HTML5-FFF?&logo=HTML5&logoColor=E34F26&backgound=E34F26",
+      "https://img.shields.io/badge/-CSS3-FFF?&logo=CSS3&logoColor=1572B6",
+      "https://img.shields.io/badge/-Sass-FFF?&logo=Sass&logoColor=CC6699",
+    ],
+    infos: "",
+    img: "./assets/img/nintendo.jpg",
+    link: "",
+    color: "#1F363D",
+    background: "#FF7F11",
+    //#89909F
+  },
+  {
     id: 1,
     title: "Nintendo",
     date: "2023",
@@ -12,8 +29,8 @@ export const projectsData = [
     infos: "Nintendo.fr home page clone",
     img: "./assets/img/nintendo.jpg",
     link: "https://sebcod-nintendo.netlify.app",
-    color: "#E60012",
-    background: "#FFFFFF",
+    color: "#FFFFFF",
+    background: "#8A000B", //
   },
   {
     id: 2,
@@ -28,8 +45,8 @@ export const projectsData = [
     infos: "Esthetic school, home page clone",
     img: "./assets/img/ScottoDiCesare.jpg",
     link: "https://sebcod-scottodicesare.netlify.app/",
-    color: "#0E0E0E",
-    background: "#C08497",
+    color: "#F45B69",
+    background: "#0E0E0E",
   },
   {
     id: 3,
@@ -44,7 +61,7 @@ export const projectsData = [
     img: "./assets/img/YourResto.jpg",
     link: "https://sebcod-your-resto.netlify.app/",
     color: "#b36700",
-    background: "#141115",
+    background: "#000000", //#141115
   },
   {
     id: 4,
@@ -58,8 +75,8 @@ export const projectsData = [
     infos: "Sample blog",
     img: "./assets/img/YourBlog.jpg",
     link: "https://sebcod-your-blog.netlify.app/",
-    color: "#008D1F",
-    background: "#E8F1F2",
+    color: "#E8F1F2",
+    background: "#00420E", //#008D1F
   },
   {
     id: 5,
@@ -73,6 +90,6 @@ export const projectsData = [
     img: "./assets/img/comeup.jpg",
     link: "https://sebcod-comeup.netlify.app/",
     color: "#e4d357",
-    background: "#394648",
+    background: "#1F2728", //#394648
   },
 ];

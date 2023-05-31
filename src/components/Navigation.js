@@ -7,55 +7,67 @@ const Navigation = (props) => {
 
   return (
     <div className="navigation">
-      {currentProject !== undefined ? (
-        <span
-          className="cercle-navigation"
-          style={{ background: currentProject.color }}
-        ></span>
-      ) : (
-        <span className="cercle-navigation"></span>
-      )}
+      <span
+        className="cercle-navigation"
+        style={{
+          border: "1px solid " + currentProject.color,
+          background: "transparent",
+        }}
+      ></span>
 
       <ul>
         <NavLink
           to="/"
           className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
         >
-          <li>Home</li>
+          <li style={{ color: currentProject.color }}>Home</li>
         </NavLink>
 
-        <li className="nav-portfolio">
+        <li className="nav-portfolio" style={{ color: currentProject.color }}>
           Portfolio
           <ul className="nav-projects">
             <NavLink
               to="/Nintendo"
               className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
             >
-              <li id="nav-li-nintendo">Nintendo</li>
+              <li id="nav-li-nintendo" style={{ color: currentProject.color }}>
+                Nintendo
+              </li>
             </NavLink>
             <NavLink
               to="/ScottoDiCesare"
               className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
             >
-              <li id="nav-li-ScottoDiCesare">Scotto Di Cesare</li>
+              <li
+                id="nav-li-ScottoDiCesare"
+                style={{ color: currentProject.color }}
+              >
+                Scotto Di Cesare
+              </li>
             </NavLink>
             <NavLink
               to="/YourResto"
               className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
             >
-              <li id="nav-li-YourResto">Your resto</li>
+              <li id="nav-li-YourResto" style={{ color: currentProject.color }}>
+                Your resto
+              </li>
             </NavLink>
             <NavLink
               to="/YourBlog"
               className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
             >
-              <li id="nav-li-YourBlog">Your blog</li>
+              <li id="nav-li-YourBlog" style={{ color: currentProject.color }}>
+                Your blog
+              </li>
             </NavLink>
             <NavLink
               to="/ComeUp"
               className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
             >
-              <li id="nav-li-ComeUp">ComeUp</li>
+              <li id="nav-li-ComeUp" style={{ color: currentProject.color }}>
+                ComeUp
+              </li>
             </NavLink>
           </ul>
         </li>

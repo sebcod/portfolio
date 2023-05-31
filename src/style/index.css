@@ -19,24 +19,13 @@
           user-select: none;
   cursor: none;
 }
-*::-moz-selection {
-  color: #f5f5f5;
-  background: #00c1ec;
-}
-*::selection {
-  color: #f5f5f5;
-  background: #00c1ec;
-}
-
 html {
   scroll-behavior: unset;
 }
 
-a,
-a:visited {
-  color: rgb(141, 141, 141);
+a {
+  text-decoration: none;
 }
-
 body {
   font-family: "font-1", sans-serif;
   height: 100vh;
@@ -56,14 +45,26 @@ main {
 }
 
 .navigation {
+  padding: 10px;
   position: absolute;
   top: 2rem;
   left: 2rem;
   font-size: 1.4rem;
   line-height: 28px;
-  color: rgb(141, 141, 141);
   width: 100px;
-  z-index: 10;
+}
+.navigation ul {
+  opacity: 1;
+}
+.navigation ul li {
+  transition: 0.3s;
+}
+.navigation ul:hover li:not(:hover) {
+  opacity: 1;
+}
+.navigation ul:hover li:hover {
+  opacity: 1;
+  transform: translateX(2px);
 }
 .navigation .cercle-navigation {
   position: absolute;
@@ -71,7 +72,7 @@ main {
   width: 400px;
   border-radius: 50%;
   background: #00c1ec;
-  opacity: 10%;
+  opacity: 50%;
   top: -300px;
   left: -260px;
   z-index: -1;
@@ -131,15 +132,8 @@ main {
   text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
   opacity: 1;
 }
-.navigation ul:hover li:not(:hover) {
-  opacity: 0.5;
-}
-.navigation ul:hover li:hover {
-  color: rgb(40, 40, 40);
-}
 .navigation .nav-portfolio {
   display: flex;
-  transition: 0.5s;
   width: 200px;
 }
 .navigation .nav-portfolio:hover .nav-projects,
@@ -201,36 +195,22 @@ main {
   width: 100vw;
   position: absolute;
 }
-.home:after {
-  content: "";
-  height: 800px;
-  width: 800px;
-  background: #e7f7fe;
-  border-radius: 50%;
+.home .random-circle {
   position: absolute;
-  bottom: -480px;
-  right: 0px;
-  z-index: -2;
-  animation: homeAnim 26s infinite alternate;
+  height: 600px;
+  width: 600px;
+  background: #f5f5f5;
+  border-radius: 50%;
+  opacity: 10%;
+  z-index: 0;
+  animation: circleAnim 16s infinite alternate;
 }
-@media screen and (max-width: 650px) {
-  .home:after {
-    height: 400px;
-    width: 400px;
-    bottom: -270px;
-  }
-}
-@keyframes homeAnim {
+@keyframes circleAnim {
   50% {
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
   100% {
-    transform: scale(1.1);
-  }
-}
-@media screen and (max-width: 430px) {
-  .home:after {
-    display: none;
+    transform: scale(1);
   }
 }
 .home .home-main {
@@ -257,32 +237,6 @@ main {
 @media screen and (min-width: 1200px) {
   .home .home-main .main-content h1 {
     font-size: 5rem;
-  }
-}
-.home .home-main .main-content h1:before {
-  content: "";
-  position: absolute;
-  height: 225px;
-  width: 225px;
-  border-radius: 50%;
-  border: 1px #00c1ec solid;
-  top: -40px;
-  left: -180px;
-  z-index: -1;
-  animation: h1Anim 1.5s forwards ease;
-  transform: scale(0);
-}
-@media screen and (max-width: 850px) {
-  .home .home-main .main-content h1:before {
-    height: 110px;
-    width: 110px;
-    left: -40px;
-    top: -15px;
-  }
-}
-@keyframes h1Anim {
-  to {
-    transform: scale(1);
   }
 }
 .home .home-main .main-content h2 {
@@ -634,17 +588,6 @@ main {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-}
-.logo:after {
-  content: "";
-  height: 24px;
-  width: 24px;
-  border: 1px #00c1ec solid;
-  border-radius: 50%;
-  position: absolute;
-  top: 1px;
-  left: -12px;
-  z-index: -1;
 }
 
 .project {
@@ -1002,13 +945,13 @@ main {
 }
 @keyframes color {
   0% {
-    color: red;
+    color: white;
   }
   50% {
-    color: orange;
+    color: white;
   }
   100% {
-    color: blue;
+    color: white;
   }
 }
 .dynamic-text .letter {
