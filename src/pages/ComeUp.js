@@ -8,7 +8,7 @@ import Project from "../components/Project";
 const ComeUp = () => {
   return (
     <main>
-      <Mouse />
+      <Mouse projectNumber={4} />
       <div className="project">
         <Navigation projectNumber={"4"} />
         <Logo />

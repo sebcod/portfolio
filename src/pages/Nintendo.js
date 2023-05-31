@@ -8,7 +8,7 @@ import Project from "../components/Project";
 const Nintendo = () => {
   return (
     <main>
-      <Mouse />
+      <Mouse projectNumber={0} />
       <div className="project">
         <Navigation projectNumber={"0"} />
         <Logo />

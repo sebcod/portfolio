@@ -8,7 +8,7 @@ import Project from "../components/Project";
 const ScottoDiCesare = () => {
   return (
     <main>
-      <Mouse />
+      <Mouse projectNumber={1} />
       <div className="project">
         <Navigation projectNumber={"1"} />
         <Logo />

@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { projectsData } from "../data/projectsData";
-import { color } from "framer-motion";
 
 const Navigation = (props) => {
-  function changeBackground(e) {
-    e.target.style.color = "red";
-  }
-
   const [currentProject] = useState(projectsData[props.projectNumber]);
   // console.log(projectsData);
   return (

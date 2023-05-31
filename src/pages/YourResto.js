@@ -8,7 +8,7 @@ import Project from "../components/Project";
 const YourResto = () => {
   return (
     <main>
-      <Mouse />
+      <Mouse projectNumber={2} />
       <div className="project">
         <Navigation projectNumber={"2"} />
         <Logo />

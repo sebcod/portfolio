@@ -1,6 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { projectsData } from "../data/projectsData";
 
-const Mouse = () => {
+const Mouse = (props) => {
+  const [currentProject] = useState(projectsData[props.projectNumber]);
+  console.log(props.projectNumber);
+
   useEffect(() => {
     const cursor = document.querySelector(".cursor");
     window.addEventListener("mousemove", (e) => {
@@ -18,7 +22,16 @@ const Mouse = () => {
       });
     });
   }, []);
-  return <span className="cursor"></span>;
+  return (
+    <span
+      className="cursor"
+      style={
+        props.projectNumber !== undefined
+          ? { border: "1px solid " + currentProject.color }
+          : { border: "1px solid #00c1ec" }
+      }
+    ></span>
+  );
 };
 
 export default Mouse;

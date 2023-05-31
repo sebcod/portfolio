@@ -41,6 +41,8 @@
       transform: scale(1.2);
       letter-spacing: 1px;
       transform: translateX(5px);
+      text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+      opacity: 1;
     }
 
     #nav-li-ScottoDiCesare {
@@ -48,6 +50,8 @@
       transform: scale(1.2);
       letter-spacing: 1px;
       transform: translateX(5px);
+      text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+      opacity: 1;
     }
 
     #nav-li-YourResto {
@@ -55,6 +59,8 @@
       transform: scale(1.2);
       letter-spacing: 1px;
       transform: translateX(5px);
+      text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+      opacity: 1;
     }
 
     #nav-li-YourBlog {
@@ -62,6 +68,8 @@
       transform: scale(1.2);
       letter-spacing: 1px;
       transform: translateX(5px);
+      text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+      opacity: 1;
     }
 
     #nav-li-ComeUp {
@@ -69,6 +77,8 @@
       transform: scale(1.2);
       letter-spacing: 1px;
       transform: translateX(5px);
+      text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+      opacity: 1;
     }
   }
 
@@ -81,7 +91,7 @@
   }
 
   .nav-portfolio {
-    cursor: pointer;
+    //cursor: pointer;
     display: flex;
     transition: .5s;
     width: 200px;
@@ -109,17 +119,21 @@
   }
 
   #nav-li-nintendo:hover {
+    opacity: 1;
     color: $color-Nintendo;
     transform: scale(1.2);
     letter-spacing: 1px;
     transform: translateX(5px);
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
   }
 
   #nav-li-ScottoDiCesare:hover {
+    opacity: 1;
     color: $color-ScottoDiCesare;
     transform: scale(1.2);
     letter-spacing: 1px;
     transform: translateX(5px);
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
   }
 
   #nav-li-YourResto:hover {
@@ -127,6 +141,7 @@
     transform: scale(1.2);
     letter-spacing: 1px;
     transform: translateX(5px);
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
   }
 
   #nav-li-YourBlog:hover {
@@ -134,6 +149,7 @@
     transform: scale(1.2);
     letter-spacing: 1px;
     transform: translateX(5px);
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
   }
 
   #nav-li-ComeUp:hover {
@@ -141,5 +157,6 @@
     transform: scale(1.2);
     letter-spacing: 1px;
     transform: translateX(5px);
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
   }
 }

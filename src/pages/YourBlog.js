@@ -8,7 +8,7 @@ import Project from "../components/Project";
 const YourBlog = () => {
   return (
     <main>
-      <Mouse />
+      <Mouse projectNumber={3} />
       <div className="project">
         <Navigation projectNumber={"3"} />
         <Logo />
