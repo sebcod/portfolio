@@ -4,10 +4,10 @@ import { projectsData } from "../data/projectsData";
 
 const Navigation = (props) => {
   const [currentProject] = useState(projectsData[props.projectNumber]);
-  // console.log(projectsData);
+
   return (
     <div className="navigation">
-      {props.projectNumber ? (
+      {currentProject !== undefined ? (
         <span
           className="cercle-navigation"
           style={{ background: currentProject.color }}

@@ -10,7 +10,7 @@ const YourResto = () => {
     <main>
       <Mouse projectNumber={2} />
       <div className="project">
-        <Navigation projectNumber={"2"} />
+        <Navigation projectNumber={2} />
         <Logo />
         <Project projectNumber={2} />
         <Buttons

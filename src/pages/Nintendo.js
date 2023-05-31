@@ -10,7 +10,7 @@ const Nintendo = () => {
     <main>
       <Mouse projectNumber={0} />
       <div className="project">
-        <Navigation projectNumber={"0"} />
+        <Navigation projectNumber={0} />
         <Logo />
         <Project projectNumber={0} />
         <Buttons left={"/"} right={"/ScottoDiCesare"} projectNumber={"0"} />

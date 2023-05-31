@@ -10,7 +10,7 @@ const ComeUp = () => {
     <main>
       <Mouse projectNumber={4} />
       <div className="project">
-        <Navigation projectNumber={"4"} />
+        <Navigation projectNumber={4} />
         <Logo />
         <Project projectNumber={4} />
         <Buttons left={"/YourBlog"} projectNumber={"4"} />

@@ -10,7 +10,7 @@ const ScottoDiCesare = () => {
     <main>
       <Mouse projectNumber={1} />
       <div className="project">
-        <Navigation projectNumber={"1"} />
+        <Navigation projectNumber={1} />
         <Logo />
         <Project projectNumber={1} />
         <Buttons left={"/Nintendo"} right={"/YourResto"} projectNumber={"1"} />
