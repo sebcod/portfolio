@@ -16,7 +16,7 @@ const Mouse = (props) => {
           cursor.classList.add("hovered");
         });
         link.addEventListener("mouseleave", () => {
-          cursor.style.transition = "0.3s ease-out";
+          //cursor.style.transition = "0.3s ease-out";
           cursor.classList.remove("hovered");
         });
       });

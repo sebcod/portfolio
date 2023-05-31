@@ -71,23 +71,3 @@ body {
 main {
   position: relative;
 }
-
-.button {
-  height: 55px;
-  width: 126px;
-  border-radius: 52.5px;
-  margin-top: 20px;
-  font-size: 1.2rem;
-  //cursor: pointer;
-  transition: 0.2s;
-
-  &:hover {
-    letter-spacing: 1px;
-    transform: scale(1.1);
-  }
-
-  &:active {
-    letter-spacing: 1px;
-    transform: scale(1);
-  }
-}

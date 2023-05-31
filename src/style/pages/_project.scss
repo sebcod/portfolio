@@ -260,9 +260,20 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: $color-1;
-        //background: $color-2;
+        background: transparent;
+        font-weight: 600;
+        letter-spacing: 1px;
+        height: 55px;
+        width: 155px;
+        border-radius: 52.5px;
+        margin-top: 20px;
+        font-size: 1.2rem;
+        transition: all 0.2s;
 
+        &:hover {
+          transform: translate(4px, -4px);
+          box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.1);
+        }
 
         @media screen and (max-width: 410px) {
           width: 100px;

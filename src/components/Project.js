@@ -102,7 +102,10 @@ const Project = ({ projectNumber }) => {
           >
             <span
               className="button"
-              style={{ background: currentProject.color }}
+              style={{
+                color: currentProject.color,
+                border: "2px solid " + currentProject.color,
+              }}
             >
               see website
             </span>
