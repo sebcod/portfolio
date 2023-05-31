@@ -13,6 +13,7 @@ export const projectsData = [
     img: "./assets/img/nintendo.jpg",
     link: "https://sebcod-nintendo.netlify.app",
     color: "#E60012",
+    background: "#FFFFFF",
   },
   {
     id: 2,
@@ -28,6 +29,7 @@ export const projectsData = [
     img: "./assets/img/ScottoDiCesare.jpg",
     link: "https://sebcod-scottodicesare.netlify.app/",
     color: "#0E0E0E",
+    background: "#C08497",
   },
   {
     id: 3,
@@ -42,6 +44,7 @@ export const projectsData = [
     img: "./assets/img/YourResto.jpg",
     link: "https://sebcod-your-resto.netlify.app/",
     color: "#b36700",
+    background: "#141115",
   },
   {
     id: 4,
@@ -56,6 +59,7 @@ export const projectsData = [
     img: "./assets/img/YourBlog.jpg",
     link: "https://sebcod-your-blog.netlify.app/",
     color: "#008D1F",
+    background: "#E8F1F2",
   },
   {
     id: 5,
@@ -69,6 +73,6 @@ export const projectsData = [
     img: "./assets/img/comeup.jpg",
     link: "https://sebcod-comeup.netlify.app/",
     color: "#e4d357",
-    //color: "#FFEE66",
+    background: "#394648",
   },
 ];

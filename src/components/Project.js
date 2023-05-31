@@ -86,17 +86,19 @@ const Project = ({ projectNumber }) => {
         transition={{ duration: 1.2 }}
         className="img-content"
       >
-        <div className="img-container hover">
-          <span>
-            <h3>{currentProject.title}</h3>
-            <p>{currentProject.infos}</p>
-          </span>
-          <img
-            src={currentProject.img}
-            alt={currentProject.title}
-            className="img"
-          />
-        </div>
+        <a href={currentProject.link}>
+          <div className="img-container hover">
+            <span>
+              <h3>{currentProject.title}</h3>
+              <p>{currentProject.infos}</p>
+            </span>
+            <img
+              src={currentProject.img}
+              alt={currentProject.title}
+              className="img"
+            />
+          </div>
+        </a>
         <div className="button-container">
           <a
             href={currentProject.link}

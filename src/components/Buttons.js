@@ -6,7 +6,7 @@ const Buttons = (props) => {
   const [currentProject] = useState(projectsData[props.projectNumber]);
   return (
     <div className="scroll-bottom">
-      {props.projectNumber == undefined && props.right && (
+      {props.projectNumber === undefined && props.right && (
         <NavLink to={props.right} className="right hover">
           <span>&#10093;</span>
         </NavLink>

@@ -13,10 +13,29 @@ $font-2: "font-2", serif;
 
 $color-1: #f5f5f5;
 $color-2: #00c1ec;
+//$color-2: #627c85;
 $color-3: #e7f7fe;
 $color-4: rgb(141, 141, 141);
 $black: rgb(40, 40, 40);
 $red: rgb(253, 87, 87);
+//$background-color: #627c85;  
+//$background-color: #0077B6;
+//$background-color: #F8F4E3;
+$background-color: #FFFFFF;
+
+
+$background-color-Nintendo-2: #5D737E;
+$background-color-Nintendo: #FFFFFF;
+$background-color-ScottoDiCesare: #C08497;
+$background-color-ScottoDiCesare-2: #AD6A6C;
+$background-color-ScottoDiCesare-3: #F45B69;
+$background-color-YourResto-3: #141115;
+$background-color-: #000000;
+$background-color-YourResto: #353535;
+$background-color-YourBlog: #E8F1F2;
+$background-color-ComeUp: #394648;
+
+
 
 $color-Nintendo: #E60012;
 $color-ScottoDiCesare: #0E0E0E;
@@ -55,7 +74,7 @@ a:visited {
 body {
   font-family: $font-1;
   height: 100vh;
-  background-color: $color-1;
+  // background-color: $background-color;
   color: $black;
   overflow: hidden;
 

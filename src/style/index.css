@@ -40,7 +40,6 @@ a:visited {
 body {
   font-family: "font-1", sans-serif;
   height: 100vh;
-  background-color: #f5f5f5;
   color: rgb(40, 40, 40);
   overflow: hidden;
 }
@@ -665,7 +664,7 @@ main {
   position: absolute;
   bottom: -500px;
   left: -200px;
-  z-index: -1;
+  z-index: 0;
 }
 @media screen and (max-width: 810px) {
   .project .cercle-1 {
@@ -781,7 +780,7 @@ main {
   position: absolute;
   top: -28px;
   left: 70px;
-  z-index: -10;
+  z-index: 0;
   opacity: 10%;
 }
 @media screen and (max-width: 810px) {
@@ -928,7 +927,7 @@ main {
   background: #e7f7fe;
   border-radius: 50%;
   opacity: 10%;
-  z-index: -1;
+  z-index: 0;
   animation: circleAnim 16s infinite alternate;
 }
 @keyframes circleAnim {
