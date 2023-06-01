@@ -778,6 +778,7 @@ main {
   height: 380px;
   overflow: hidden;
   position: relative;
+  border-radius: 20px;
 }
 @media screen and (max-width: 940px) {
   .project .project-main .img-content .img-container {
@@ -803,7 +804,6 @@ main {
   transform: translateY(0);
 }
 .project .project-main .img-content .img-container img {
-  overflow: hidden;
   -o-object-fit: center;
      object-fit: center;
   -o-object-position: 0%;
@@ -871,7 +871,7 @@ main {
   border-radius: 50%;
   opacity: 10%;
   z-index: 0;
-  animation: circleAnim 16s infinite alternate;
+  animation: circleAnim 30s infinite alternate;
 }
 @keyframes circleAnim {
   50% {

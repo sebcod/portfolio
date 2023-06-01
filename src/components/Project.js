@@ -87,7 +87,10 @@ const Project = ({ projectNumber }) => {
         className="img-content"
       >
         <a href={currentProject.link}>
-          <div className="img-container hover">
+          <div
+            className="img-container hover"
+            style={{ border: "7px double" + currentProject.color }}
+          >
             <span>
               <h3>{currentProject.title}</h3>
               <p>{currentProject.infos}</p>
