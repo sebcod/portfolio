@@ -24,12 +24,13 @@ const Mouse = (props) => {
   return (
     <span
       className="cursor"
-      style={
-        props.projectNumber !== undefined
-          ? { border: "1px solid " + currentProject.color }
-          : { border: "1px solid #00c1ec" }
-      }
-    ></span>
+      style={{ border: "1px solid " + currentProject.color }}
+    >
+      <span
+        className="centerDot"
+        style={{ border: "1px solid " + currentProject.color }}
+      ></span>
+    </span>
   );
 };
 

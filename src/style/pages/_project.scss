@@ -187,7 +187,6 @@
         height: 380px;
         overflow: hidden;
         position: relative;
-        //border: 8px double white;
         border-radius: 20px;
 
         @media screen and (max-width: 940px) {
@@ -220,9 +219,6 @@
           position: absolute;
           transition: 0.4s ease-out;
           position: relative;
-
-          //border: 10px double;
-          //border-radius: 20px;
 
           &:hover,
           span:hover img {

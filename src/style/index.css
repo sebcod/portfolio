@@ -286,9 +286,13 @@ main {
   font-size: 4rem;
   color: #00c1ec;
   transition: 0.25s;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .scroll-bottom a span {
-  line-height: 1;
+  line-height: 1.5;
 }
 .scroll-bottom a:hover {
   font-size: 4.8rem;
@@ -297,10 +301,10 @@ main {
   font-size: 4rem;
 }
 .scroll-bottom .left {
-  left: 20px;
+  left: 0px;
 }
 .scroll-bottom .right {
-  right: 20px;
+  right: 0px;
 }
 
 .contact {
@@ -921,6 +925,16 @@ main {
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 2;
+}
+.cursor .centerDot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .cursor.hovered {
