@@ -73,7 +73,6 @@
   }
 
   .project-main {
-    //margin: 8rem 1rem 0;
     width: 90%;
     display: grid;
     grid-template-columns: 33% 67%;
@@ -250,7 +249,12 @@
   }
 
   .button-container {
-    width: 130px;
+    //border: solid;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 
     a {
       .button {
@@ -260,8 +264,8 @@
         background: transparent;
         font-weight: 600;
         letter-spacing: 1px;
-        height: 55px;
-        width: 155px;
+        height: 45px;
+        width: 140px;
         border-radius: 52.5px;
         margin-top: 20px;
         font-size: 1.2rem;
@@ -270,6 +274,10 @@
         &:hover {
           transform: translate(4px, -4px);
           box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        &:active {
+          transform: translate(0px, 0px);
         }
 
         @media screen and (max-width: 410px) {

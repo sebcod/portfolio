@@ -10,10 +10,11 @@ export const projectsData = [
       "https://img.shields.io/badge/-Sass-FFF?&logo=Sass&logoColor=CC6699",
     ],
     infos: "",
-    img: "./assets/img/nintendo.jpg",
+    img: "./assets/img/SébastienCodus.jpg",
     link: "",
-    color: "#1F363D",
-    background: "#FF7F11",
+    linkGitHub: "https://github.com/sebcod/portfolio",
+    color: "#2DEEE7",
+    background: "#414141",
     //#89909F
   },
   {
@@ -29,8 +30,9 @@ export const projectsData = [
     infos: "Nintendo.fr home page clone",
     img: "./assets/img/nintendo.jpg",
     link: "https://sebcod-nintendo.netlify.app",
+    linkGitHub: "https://github.com/sebcod/Clone_nintendo.fr",
     color: "#FFFFFF",
-    background: "#8A000B", //
+    background: "#8A000B",
   },
   {
     id: 2,
@@ -45,6 +47,7 @@ export const projectsData = [
     infos: "Esthetic school, home page clone",
     img: "./assets/img/ScottoDiCesare.jpg",
     link: "https://sebcod-scottodicesare.netlify.app/",
+    linkGitHub: "https://github.com/sebcod/Clone_groupe-scottodicesare.com",
     color: "#F45B69",
     background: "#0E0E0E",
   },
@@ -60,6 +63,7 @@ export const projectsData = [
     infos: "Website design for restaurants",
     img: "./assets/img/YourResto.jpg",
     link: "https://sebcod-your-resto.netlify.app/",
+    linkGitHub: "https://github.com/sebcod/YourResto",
     color: "#b36700",
     background: "#000000", //#141115
   },
@@ -75,6 +79,7 @@ export const projectsData = [
     infos: "Sample blog",
     img: "./assets/img/YourBlog.jpg",
     link: "https://sebcod-your-blog.netlify.app/",
+    linkGitHub: "https://github.com/sebcod/YourBlog",
     color: "#E8F1F2",
     background: "#00420E", //#008D1F
   },
@@ -89,6 +94,7 @@ export const projectsData = [
     infos: "Platform for freelancers, front page clone",
     img: "./assets/img/comeup.jpg",
     link: "https://sebcod-comeup.netlify.app/",
+    linkGitHub: "https://github.com/sebcod/clone_ComeUp.com",
     color: "#e4d357",
     background: "#1F2728", //#394648
   },

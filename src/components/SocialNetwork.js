@@ -20,7 +20,7 @@ const SocialNetwork = () => {
       <ul className="content">
         <a
           href="https://github.com/sebcod"
-          target="_blank"
+          // target="_blank"
           rel="noreferrer"
           className="hover"
           onMouseOver={anim}

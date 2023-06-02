@@ -67,9 +67,44 @@
     align-items: center;
     justify-items: center;
     height: 100%;
+    position: relative;
+
+    .img-content {
+      //border: 7px double;
+      border-radius: 20px;
+      width: 400px;
+      height: 600px;
+      position: absolute;
+      transform: translate(-307px, -20px);
+      box-shadow: -1px 1px 1px #2DEEE7,
+        -2px 2px 1px #2DEEE7,
+        -3px 3px 1px #2deee7,
+        -20px 18px 60px rgba(8, 8, 8, 0.51),
+        -20px 20px 37px 0px #2deee734;
+
+      @media screen and (max-width: 810px) {
+        transform: translateX(0);
+      }
+
+      img {
+        object-fit: center;
+        object-position: 0%;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+      }
+
+    }
 
     .main-content {
-      user-select: none;
+      //border: solid;
+      position: absolute;
+      transform: translate(0px, 100px);
+
+      @media screen and (max-width: 810px) {
+        transform: translate(35px, 200px);
+      }
+
 
       h1 {
         font-size: 3.7rem;

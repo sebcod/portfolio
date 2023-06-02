@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { projectsData } from "../data/projectsData";
 import { motion } from "framer-motion";
+import ButtonGitHub from "./ButtonGitHub";
 
 const Project = ({ projectNumber }) => {
   const [currentProject] = useState(projectsData[projectNumber]);
@@ -86,26 +87,33 @@ const Project = ({ projectNumber }) => {
         transition={{ duration: 1.2 }}
         className="img-content"
       >
-        <a href={currentProject.link}>
-          <div
-            className="img-container hover"
-            style={{ border: "7px double" + currentProject.color }}
-          >
+        <div
+          className="img-container hover"
+          style={{
+            boxShadow: "-3px 3px 0px " + currentProject.color,
+          }}
+        >
+          <a href={currentProject.link}>
             <span>
-              <h3>{currentProject.title}</h3>
-              <p>{currentProject.infos}</p>
+              <h3 style={{ color: currentProject.color }}>
+                {currentProject.title}
+              </h3>
+              <p style={{ color: currentProject.color }}>
+                {currentProject.infos}
+              </p>
             </span>
             <img
               src={currentProject.img}
               alt={currentProject.title}
               className="img"
-            />
-          </div>
-        </a>
+            />{" "}
+          </a>
+        </div>
+
         <div className="button-container">
           <a
             href={currentProject.link}
-            target="_blank"
+            // target="_blank"
             rel="noopener noreferrer"
             className="hover"
           >
@@ -116,9 +124,11 @@ const Project = ({ projectNumber }) => {
                 border: "2px solid " + currentProject.color,
               }}
             >
-              see website
+              See more
             </span>
           </a>
+
+          <ButtonGitHub projectNumber={projectNumber} />
         </div>
         <span
           className="random-circle"

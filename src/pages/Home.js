@@ -46,7 +46,7 @@ const Home = () => {
         variants={variants}
       >
         <Navigation projectNumber={0} />
-        <SocialNetwork />
+
         <div
           className="home-main"
           style={{
@@ -54,6 +54,10 @@ const Home = () => {
             color: currentProject.color,
           }}
         >
+          <div className="img-content">
+            <img src={currentProject.img} alt={currentProject.title} />
+            <SocialNetwork />
+          </div>
           <div className="main-content">
             <h1>Sébastien Codus</h1>
             <h2>
