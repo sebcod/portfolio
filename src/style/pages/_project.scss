@@ -18,15 +18,12 @@
     left: -200px;
     z-index: 0;
 
-    @media screen and (max-width: 810px) {
-      height: 200px;
-      width: 200px;
-      bottom: -110px;
+    @media only screen and (max-width: 768px) {
+      display: none;
     }
 
-    @media screen and (max-width: 430px) {
-      // display: none;
-      left: -500px;
+    @media only screen and (orientation: landscape) {
+      display: none;
     }
   }
 
@@ -86,7 +83,6 @@
       .cercle-2 {
         height: 340px;
         width: 340px;
-        //background: $color-3;
         border-radius: 50%;
         position: absolute;
         top: -28px;
@@ -94,10 +90,12 @@
         z-index: 0;
         opacity: 10%;
 
-        @media screen and (max-width: 810px) {
-          height: 220px;
-          width: 220px;
-          left: -30px;
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
+
+        @media only screen and (orientation: landscape) {
+          display: none;
         }
       }
 
@@ -267,9 +265,12 @@
       }
     }
 
-    @media screen and (max-width: 630px) {
+    @media only screen and (max-width: 768px) {
       display: none;
-      //left: 100px;
+    }
+
+    @media only screen and (orientation: landscape) {
+      display: none;
     }
   }
 }

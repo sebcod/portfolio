@@ -49,7 +49,6 @@ $color-ComeUp: #e4d357;
   box-sizing: border-box;
   list-style-type: none;
   outline: none;
-  // border: none;
   text-decoration: none;
   user-select: none;
   cursor: none;
@@ -65,7 +64,6 @@ a {
   text-decoration: none;
 }
 
-
 body {
   padding: 0;
   margin: 0;
@@ -75,8 +73,6 @@ body {
 
   @media screen and (max-width: 430px) {
     position: relative;
-    // max-width: 100vw;
-    // overflow-y: initial;
   }
 }
 
