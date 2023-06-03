@@ -27,14 +27,6 @@ const Navigation = (props) => {
           Portfolio
           <ul className="nav-projects">
             <NavLink
-              to="/Nintendo"
-              className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
-            >
-              <li id="nav-li-nintendo" style={{ color: currentProject.color }}>
-                Nintendo
-              </li>
-            </NavLink>
-            <NavLink
               to="/ScottoDiCesare"
               className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
             >
@@ -45,6 +37,15 @@ const Navigation = (props) => {
                 Scotto Di Cesare
               </li>
             </NavLink>
+            <NavLink
+              to="/Nintendo"
+              className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
+            >
+              <li id="nav-li-nintendo" style={{ color: currentProject.color }}>
+                Nintendo
+              </li>
+            </NavLink>
+
             <NavLink
               to="/YourResto"
               className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}

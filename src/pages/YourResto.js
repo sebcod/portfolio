@@ -21,11 +21,7 @@ const YourResto = () => {
         <Navigation projectNumber={3} />
         <Logo />
         <Project projectNumber={3} />
-        <Buttons
-          left={"/ScottoDicesare"}
-          right={"/YourBlog"}
-          projectNumber={3}
-        />
+        <Buttons left={"/Nintendo"} right={"/YourBlog"} projectNumber={3} />
       </div>
     </main>
   );

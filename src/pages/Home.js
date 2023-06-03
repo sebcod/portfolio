@@ -62,7 +62,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <Buttons projectNumber={0} right={"/Nintendo"} />
+        <Buttons projectNumber={0} right={"/ScottoDiCesare"} />
       </motion.div>
     </div>
   );

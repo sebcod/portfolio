@@ -8,16 +8,7 @@
   animation: navProject 1s ease forwards;
   z-index: 10;
 
-  @media screen and (max-width: 1030px) {
-    left: 150px;
-  }
-
-  @media screen and (max-width: 430px) {
-    top: 50px;
-    left: 50px;
-  }
-
-  @media screen and (max-height: 739px) {
+  @media screen and (max-width: 1024px) {
     display: none;
   }
 

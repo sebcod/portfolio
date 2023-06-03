@@ -20,6 +20,7 @@
 
 html {
   scroll-behavior: unset;
+  background-color: #fff;
 }
 
 a {
@@ -53,18 +54,7 @@ main {
   animation: navProject 1s ease forwards;
   z-index: 10;
 }
-@media screen and (max-width: 1030px) {
-  .navigation {
-    left: 150px;
-  }
-}
-@media screen and (max-width: 430px) {
-  .navigation {
-    top: 50px;
-    left: 50px;
-  }
-}
-@media screen and (max-height: 739px) {
+@media screen and (max-width: 1024px) {
   .navigation {
     display: none;
   }
@@ -262,6 +252,11 @@ main {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 738px) {
+  .scroll-bottom a {
+    top: 80%;
+  }
+}
 .scroll-bottom a span {
   line-height: 1.5;
 }
@@ -274,8 +269,18 @@ main {
 .scroll-bottom .left {
   left: 0px;
 }
+@media screen and (max-width: 738px) {
+  .scroll-bottom .left {
+    left: 80px;
+  }
+}
 .scroll-bottom .right {
   right: 0px;
+}
+@media screen and (max-width: 738px) {
+  .scroll-bottom .right {
+    right: 80px;
+  }
 }
 
 .contact {
@@ -394,7 +399,6 @@ main {
   border-radius: 50px;
   margin-top: 20px;
   font-size: 1.2rem;
-  cursor: pointer;
   transition: 0.2s;
   border: none;
 }
@@ -589,12 +593,11 @@ main {
   overflow: hidden;
 }
 .project .cercle-1 {
+  position: absolute;
   height: 460px;
   width: 460px;
-  border: 1px solid #00c1ec;
   opacity: 50%;
   border-radius: 50%;
-  position: absolute;
   bottom: -500px;
   left: -200px;
   z-index: 0;
@@ -605,37 +608,33 @@ main {
   }
 }
 .project .project-main {
-  width: 90%;
   display: grid;
-  grid-template-columns: 33% 67%;
+  grid-template-columns: auto auto;
   position: relative;
   text-align: right;
+  width: -moz-max-content;
+  width: max-content;
 }
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1490px) {
   .project .project-main {
-    grid-template-columns: 25% 75%;
+    grid-template-columns: auto;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 738px) {
   .project .project-main {
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 1fr;
-  }
-}
-@media screen and (max-height: 600px) {
-  .project .project-main {
-    margin: 3rem 1rem 0;
+    position: absolute;
+    top: 15%;
   }
 }
 .project .project-main .project-content {
+  width: -moz-max-content;
+  width: max-content;
   margin-right: 20px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1490px) {
   .project .project-main .project-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0.5rem;
+    text-align: left;
+    width: 100%;
   }
 }
 .project .project-main .project-content h1 {
@@ -646,14 +645,14 @@ main {
   animation: transformTitle 1.5s ease forwards;
   transform-origin: 150%;
 }
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1490px) {
   .project .project-main .project-content h1 {
-    font-size: 2rem;
+    margin-bottom: 5px;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 738px) {
   .project .project-main .project-content h1 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 }
 @keyframes transformTitle {
@@ -662,10 +661,10 @@ main {
   }
 }
 .project .project-main .project-content .cercle-2 {
+  position: absolute;
   height: 340px;
   width: 340px;
   border-radius: 50%;
-  position: absolute;
   top: -28px;
   left: 70px;
   z-index: 0;
@@ -680,66 +679,49 @@ main {
   margin-bottom: 50px;
   font-size: 1.2rem;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1490px) {
   .project .project-main .project-content p {
-    margin: 0;
+    margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 450px) {
-  .project .project-main .project-content p {
-    font-size: 0.9rem;
+@media screen and (max-width: 1490px) {
+  .project .project-main .project-content .languages {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
   }
 }
 .project .project-main .project-content li {
   font-size: 1.5rem;
 }
-@media screen and (max-width: 700px) {
-  .project .project-main .project-content li {
-    font-size: 1.1rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  .project .project-main .project-content li {
-    font-size: 0.8rem;
-  }
-}
 .project .project-main .img-content {
+  width: -moz-max-content;
+  width: max-content;
   position: relative;
   text-align: left;
-  margin-left: 10px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1490px) {
   .project .project-main .img-content {
-    text-align: center;
-    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .project .project-main .img-content {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 738px) {
+  .project .project-main .img-content {
+    max-width: 350px;
   }
 }
 .project .project-main .img-content .img-container {
   border-radius: 5px;
   box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.26);
-  width: 600px;
-  height: 380px;
+  max-width: 800px;
   overflow: hidden;
   position: relative;
   border-radius: 20px;
-}
-@media screen and (max-width: 940px) {
-  .project .project-main .img-content .img-container {
-    height: 300px;
-    width: 500px;
-  }
-}
-@media screen and (max-width: 540px) {
-  .project .project-main .img-content .img-container {
-    height: 200px;
-    width: 370px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .project .project-main .img-content .img-container {
-    height: 150px;
-    width: 280px;
-  }
 }
 .project .project-main .img-content .img-container:hover span,
 .project .project-main .img-content .img-container span:hover {
@@ -756,6 +738,7 @@ main {
   position: absolute;
   transition: 0.4s ease-out;
   position: relative;
+  cursor: none;
 }
 .project .project-main .img-content .img-container img:hover,
 .project .project-main .img-content .img-container img span:hover img {
@@ -787,6 +770,11 @@ main {
   align-items: center;
   gap: 15px;
 }
+@media screen and (max-width: 1490px) {
+  .project .button-container {
+    float: right;
+  }
+}
 .project .button-container a .button {
   display: flex;
   align-items: center;
@@ -807,12 +795,6 @@ main {
 }
 .project .button-container a .button:active {
   transform: translate(0px, 0px);
-}
-@media screen and (max-width: 410px) {
-  .project .button-container a .button {
-    width: 100px;
-    font-size: 0.85rem;
-  }
 }
 .project .random-circle {
   position: absolute;
