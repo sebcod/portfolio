@@ -19,23 +19,6 @@ export const projectsData = [
   },
   {
     id: 1,
-    title: "Nintendo",
-    date: "2023",
-    languages: [
-      "https://img.shields.io/badge/-JavaScript-FFF?&logo=JavaScript&logoColor=F7DF1E",
-      "https://img.shields.io/badge/-HTML5-FFF?&logo=HTML5&logoColor=E34F26&backgound=E34F26",
-      "https://img.shields.io/badge/-CSS3-FFF?&logo=CSS3&logoColor=1572B6",
-      "https://img.shields.io/badge/-Sass-FFF?&logo=Sass&logoColor=CC6699",
-    ],
-    infos: "Nintendo.fr home page clone",
-    img: "./assets/img/nintendo.jpg",
-    link: "https://sebcod-nintendo.netlify.app",
-    linkGitHub: "https://github.com/sebcod/Clone_nintendo.fr",
-    color: "#FFFFFF",
-    background: "#8A000B",
-  },
-  {
-    id: 2,
     title: "Scotto Di Cesare",
     date: "2023",
     languages: [
@@ -51,6 +34,24 @@ export const projectsData = [
     color: "#F45B69",
     background: "#0E0E0E",
   },
+  {
+    id: 2,
+    title: "Nintendo",
+    date: "2023",
+    languages: [
+      "https://img.shields.io/badge/-JavaScript-FFF?&logo=JavaScript&logoColor=F7DF1E",
+      "https://img.shields.io/badge/-HTML5-FFF?&logo=HTML5&logoColor=E34F26&backgound=E34F26",
+      "https://img.shields.io/badge/-CSS3-FFF?&logo=CSS3&logoColor=1572B6",
+      "https://img.shields.io/badge/-Sass-FFF?&logo=Sass&logoColor=CC6699",
+    ],
+    infos: "Nintendo.fr home page clone",
+    img: "./assets/img/nintendo.jpg",
+    link: "https://sebcod-nintendo.netlify.app",
+    linkGitHub: "https://github.com/sebcod/Clone_nintendo.fr",
+    color: "#FFFFFF",
+    background: "#8A000B",
+  },
+
   {
     id: 3,
     title: "Your Resto",

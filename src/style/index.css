@@ -16,7 +16,6 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  box-shadow: 0 0 0 3px red inset;
 }
 
 html {
@@ -127,6 +126,7 @@ main {
   height: 100%;
   width: 100%;
   position: absolute;
+  overflow: hidden;
 }
 .home .home-main {
   display: grid;
@@ -138,19 +138,34 @@ main {
 .home .home-main .img-content {
   margin: 20px;
   border-radius: 20px;
-  max-width: 400px;
+  width: 400px;
   position: absolute;
-  transform: translate(-307px, -20px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-470px, -340px);
   box-shadow: -1px 1px 1px #2DEEE7, -2px 2px 1px #2DEEE7, -3px 3px 1px #2deee7, -20px 18px 60px rgba(8, 8, 8, 0.51), -20px 20px 37px 0px rgba(45, 238, 231, 0.2039215686);
+}
+@media screen and (max-width: 425px) {
+  .home .home-main .img-content {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .home .home-main .img-content {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .home .home-main .img-content {
+    width: 270px;
+  }
 }
 @media screen and (max-width: 1110px) {
   .home .home-main .img-content {
-    transform: translateX(0);
+    transform: translate(-55%, -55%);
   }
 }
 .home .home-main .img-content img {
-  -o-object-fit: center;
-     object-fit: center;
   -o-object-position: 0%;
      object-position: 0%;
   width: 100%;
@@ -159,11 +174,17 @@ main {
 }
 .home .home-main .main-content {
   position: absolute;
-  transform: translate(40px, 160px);
+  bottom: 40px;
+  left: 70px;
+  width: -moz-max-content;
+  width: max-content;
 }
 @media screen and (max-width: 1110px) {
   .home .home-main .main-content {
-    transform: translate(40px, 220px);
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    width: 90%;
   }
 }
 .home .home-main .main-content h1 {
@@ -176,6 +197,11 @@ main {
     font-size: 5rem;
   }
 }
+@media screen and (max-width: 425px) {
+  .home .home-main .main-content h1 {
+    font-size: 1.7rem;
+  }
+}
 .home .home-main .main-content h2 {
   font-weight: 100;
   position: relative;
@@ -184,6 +210,11 @@ main {
 @media screen and (min-width: 1110px) {
   .home .home-main .main-content h2 {
     font-size: 5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .home .home-main .main-content h2 {
+    font-size: 1.7rem;
   }
 }
 
@@ -875,7 +906,6 @@ main {
 }
 .dynamic-text #text-target {
   display: flex;
-  width: 300px;
   text-align: left;
   animation: color 3s alternate infinite;
   perspective: 200px;

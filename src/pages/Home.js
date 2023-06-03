@@ -54,12 +54,12 @@ const Home = () => {
           <div className="img-content">
             <img src={currentProject.img} alt={currentProject.title} />
             <SocialNetwork />
-          </div>
-          <div className="main-content">
-            <h1>Sébastien Codus</h1>
-            <h2>
-              <DynamicText />
-            </h2>
+            <div className="main-content">
+              <h1>Sébastien Codus</h1>
+              <h2>
+                <DynamicText />
+              </h2>
+            </div>
           </div>
         </div>
         <Buttons projectNumber={0} right={"/Nintendo"} />
