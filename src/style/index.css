@@ -12,13 +12,13 @@
   box-sizing: border-box;
   list-style-type: none;
   outline: none;
-  border: none;
   text-decoration: none;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   cursor: none;
 }
+
 html {
   scroll-behavior: unset;
 }
@@ -26,17 +26,17 @@ html {
 a {
   text-decoration: none;
 }
+
 body {
+  padding: 0;
+  margin: 0;
   font-family: "font-1", sans-serif;
   height: 100vh;
-  color: rgb(40, 40, 40);
   overflow: hidden;
 }
 @media screen and (max-width: 430px) {
   body {
     position: relative;
-    max-width: 100vw;
-    overflow-y: initial;
   }
 }
 
@@ -45,6 +45,7 @@ main {
 }
 
 .navigation {
+  border: solid;
   padding: 10px;
   position: absolute;
   top: 2rem;
@@ -191,27 +192,9 @@ main {
 }
 
 .home {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   position: absolute;
-}
-.home .random-circle {
-  position: absolute;
-  height: 600px;
-  width: 600px;
-  background: #f5f5f5;
-  border-radius: 50%;
-  opacity: 10%;
-  z-index: 0;
-  animation: circleAnim 16s infinite alternate;
-}
-@keyframes circleAnim {
-  50% {
-    transform: scale(0.7);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 .home .home-main {
   display: grid;
@@ -221,14 +204,14 @@ main {
   position: relative;
 }
 .home .home-main .img-content {
+  margin: 20px;
   border-radius: 20px;
-  width: 400px;
-  height: 600px;
+  max-width: 400px;
   position: absolute;
   transform: translate(-307px, -20px);
   box-shadow: -1px 1px 1px #2DEEE7, -2px 2px 1px #2DEEE7, -3px 3px 1px #2deee7, -20px 18px 60px rgba(8, 8, 8, 0.51), -20px 20px 37px 0px rgba(45, 238, 231, 0.2039215686);
 }
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1110px) {
   .home .home-main .img-content {
     transform: translateX(0);
   }
@@ -244,38 +227,29 @@ main {
 }
 .home .home-main .main-content {
   position: absolute;
-  transform: translate(0px, 100px);
+  transform: translate(40px, 160px);
 }
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1110px) {
   .home .home-main .main-content {
-    transform: translate(35px, 200px);
+    transform: translate(40px, 220px);
   }
 }
 .home .home-main .main-content h1 {
-  font-size: 3.7rem;
+  font-size: 2rem;
   position: relative;
   font-family: "font-2", serif;
 }
-@media screen and (max-width: 650px) {
-  .home .home-main .main-content h1 {
-    font-size: 2rem;
-  }
-}
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1110px) {
   .home .home-main .main-content h1 {
     font-size: 5rem;
   }
 }
 .home .home-main .main-content h2 {
-  font-size: 4.2rem;
   font-weight: 100;
+  position: relative;
+  font-size: 2rem;
 }
-@media screen and (max-width: 650px) {
-  .home .home-main .main-content h2 {
-    font-size: 2rem;
-  }
-}
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1110px) {
   .home .home-main .main-content h2 {
     font-size: 5rem;
   }
@@ -283,9 +257,14 @@ main {
 
 .social-network {
   position: absolute;
-  right: 450px;
-  top: 10px;
+  left: -80px;
+  top: 20px;
   font-size: 1.8rem;
+}
+@media screen and (max-width: 1300px) {
+  .social-network {
+    left: 20px;
+  }
 }
 .social-network ul {
   display: flex;
@@ -616,11 +595,20 @@ main {
 
 .logo {
   position: absolute;
-  font-family: "font-2", serif;
-  font-size: 1.2rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  top: 20px;
+  left: calc(50% - 50px);
+  transform: translate(-50%, -150%);
+  animation: logoProject 1s ease forwards;
+}
+@keyframes logoProject {
+  to {
+    transform: translate(-50%, 0%);
+  }
+}
+@media screen and (max-width: 1030px) {
+  .logo {
+    left: 80px;
+  }
 }
 
 .project {
@@ -679,18 +667,6 @@ main {
 .project .navigation .nav-projects {
   transform: translateX(67px);
   padding: 0 20px;
-}
-.project .logo {
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  transform: scale(0);
-  animation: logoProject 2s ease forwards;
-}
-@keyframes logoProject {
-  to {
-    transform: scale(1);
-  }
 }
 .project .project-main {
   width: 90%;
@@ -922,6 +898,12 @@ main {
     transform: scale(1);
   }
 }
+@media screen and (max-width: 630px) {
+  .project .random-circle {
+    display: none;
+  }
+}
+
 .notFound {
   display: flex;
   height: 100vh;

@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  //overflow: hidden;
 
   .cercle-1 {
     height: 460px;
@@ -55,20 +56,6 @@
     .nav-projects {
       transform: translateX(67px);
       padding: 0 20px;
-    }
-  }
-
-  .logo {
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    transform: scale(0);
-    animation: logoProject 2s ease forwards;
-
-    @keyframes logoProject {
-      to {
-        transform: scale(1);
-      }
     }
   }
 
@@ -310,7 +297,7 @@
     }
 
     @media screen and (max-width: 630px) {
-      //display: none;
+      display: none;
       //left: 100px;
     }
   }

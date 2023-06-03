@@ -1,5 +1,5 @@
 .navigation {
-  //border: solid;
+  border: solid;
   padding: 10px;
   position: absolute;
   top: 2rem;
@@ -8,6 +8,10 @@
   line-height: 28px;
   width: 100px;
   //z-index: 10;
+
+  @media screen and (max-width: 430px) {
+    //left: 0px;
+  }
 
 
   //color: $color-4;

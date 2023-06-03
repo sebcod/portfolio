@@ -1,18 +1,19 @@
 .logo {
   position: absolute;
-  font-family: $font-2;
-  font-size: 1.2rem;
-  user-select: none;
+  top: 20px;
+  left: calc(50% - 50px);
+  transform: translate(-50%, -150%);
 
-  // &:after {
-  //   content: "";
-  //   height: 24px;
-  //   width: 24px;
-  //   border: 1px $color-2 solid;
-  //   border-radius: 50%;
-  //   position: absolute;
-  //   top: 1px;
-  //   left: -12px;
-  //   z-index: -1;
-  // }
+  animation: logoProject 1s ease forwards;
+
+  @keyframes logoProject {
+    to {
+      transform: translate(-50%, 0%);
+    }
+  }
+
+  @media screen and (max-width: 1030px) {
+    //transform: translate(0%, 0%);
+    left: 80px;
+  }
 }

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Navigation from "../components/Navigation";
 import Mouse from "../components/Mouse";
 import SocialNetwork from "../components/SocialNetwork";
 import DynamicText from "../components/DynamicText";
@@ -45,8 +44,6 @@ const Home = () => {
         exit="exit"
         variants={variants}
       >
-        <Navigation projectNumber={0} />
-
         <div
           className="home-main"
           style={{
@@ -66,15 +63,6 @@ const Home = () => {
           </div>
         </div>
         <Buttons projectNumber={0} right={"/Nintendo"} />
-        <span
-          className="random-circle"
-          style={{
-            left,
-            top,
-            transform: size,
-            background: currentProject.color,
-          }}
-        ></span>
       </motion.div>
     </div>
   );

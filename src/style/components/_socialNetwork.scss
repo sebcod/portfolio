@@ -1,10 +1,14 @@
 .social-network {
   //border: solid;
   position: absolute;
-  right: 450px;
-  top: 10px;
+  left: -80px;
+  top: 20px;
   font-size: 1.8rem;
   // transform: translateY(-50%);
+
+  @media screen and (max-width: 1300px) {
+    left: 20px;
+  }
 
   ul {
     display: flex;
