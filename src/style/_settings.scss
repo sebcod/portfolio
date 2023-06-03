@@ -51,7 +51,7 @@ $color-ComeUp: #e4d357;
   outline: none;
   text-decoration: none;
   user-select: none;
-  cursor: none;
+  //cursor: none;
 
   box-shadow: 0 0 0 3px red inset;
 }
@@ -71,11 +71,14 @@ body {
   height: 100vh;
   overflow: hidden;
 
-  @media screen and (max-width: 430px) {
-    position: relative;
+  // @media screen and (max-width: 430px) {
+  //   position: relative;
+  // }
+
+  @media only screen and (min-width: 1200px) {
+    cursor: none;
   }
 }
-
 
 main {
   position: relative;
