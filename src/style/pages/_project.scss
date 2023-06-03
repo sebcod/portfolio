@@ -18,13 +18,13 @@
     left: -200px;
     z-index: 0;
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1200px) {
       display: none;
     }
 
-    @media only screen and (orientation: landscape) {
-      display: none;
-    }
+    // @media only screen and (orientation: landscape) {
+    //   display: none;
+    // }
   }
 
   .project-main {
@@ -90,11 +90,7 @@
         z-index: 0;
         opacity: 10%;
 
-        @media only screen and (max-width: 768px) {
-          display: none;
-        }
-
-        @media only screen and (orientation: landscape) {
+        @media only screen and (max-width: 1200px) {
           display: none;
         }
       }
@@ -265,11 +261,7 @@
       }
     }
 
-    @media only screen and (max-width: 768px) {
-      display: none;
-    }
-
-    @media only screen and (orientation: landscape) {
+    @media only screen and (max-width: 1200px) {
       display: none;
     }
   }
