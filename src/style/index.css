@@ -17,6 +17,7 @@
      -moz-user-select: none;
           user-select: none;
   cursor: none;
+  box-shadow: 0 0 0 3px red inset;
 }
 
 html {
@@ -45,97 +46,64 @@ main {
 }
 
 .navigation {
-  border: solid;
-  padding: 10px;
   position: absolute;
-  top: 2rem;
-  left: 2rem;
-  font-size: 1.4rem;
-  line-height: 28px;
-  width: 100px;
+  top: 20px;
+  left: calc(50% + 20px);
+  transform: translateY(-150%);
+  font-size: 1.1rem;
+  line-height: 20px;
+  animation: navProject 1s ease forwards;
+  z-index: 10;
 }
-.navigation ul {
-  opacity: 1;
+@media screen and (max-width: 1030px) {
+  .navigation {
+    left: 150px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .navigation {
+    top: 50px;
+    left: 50px;
+  }
+}
+@media screen and (max-height: 739px) {
+  .navigation {
+    display: none;
+  }
+}
+@keyframes navProject {
+  to {
+    transform: translateY(0);
+  }
 }
 .navigation ul li {
   transition: 0.3s;
 }
-.navigation ul:hover li:not(:hover) {
-  opacity: 1;
-}
 .navigation ul:hover li:hover {
-  opacity: 1;
-  transform: translateX(2px);
+  transform: translateX(5px);
 }
 .navigation .cercle-navigation {
   position: absolute;
+  top: -120px;
+  left: -20px;
+  transform: translate(-50%, -50%);
   height: 400px;
   width: 400px;
   border-radius: 50%;
-  background: #00c1ec;
-  opacity: 50%;
-  top: -300px;
-  left: -260px;
+  opacity: 100%;
   z-index: -1;
-  animation: navAnim 20s infinite alternate;
+  animation: navAnim 10s infinite alternate;
 }
 @keyframes navAnim {
-  50% {
-    transform: scale(1.2);
+  0% {
+    transform: translate(-50%, -50%) scale(1.2);
   }
   100% {
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
-}
-@media screen and (max-width: 430px) {
-  .navigation .cercle-navigation {
-    height: 50px;
-    width: 50px;
-  }
-}
-.navigation .nav-active #nav-li-nintendo {
-  color: #E60012;
-  transform: scale(1.2);
-  letter-spacing: 1px;
-  transform: translateX(5px);
-  text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-  opacity: 1;
-}
-.navigation .nav-active #nav-li-ScottoDiCesare {
-  color: #0E0E0E;
-  transform: scale(1.2);
-  letter-spacing: 1px;
-  transform: translateX(5px);
-  text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-  opacity: 1;
-}
-.navigation .nav-active #nav-li-YourResto {
-  color: #b36700;
-  transform: scale(1.2);
-  letter-spacing: 1px;
-  transform: translateX(5px);
-  text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-  opacity: 1;
-}
-.navigation .nav-active #nav-li-YourBlog {
-  color: #008D1F;
-  transform: scale(1.2);
-  letter-spacing: 1px;
-  transform: translateX(5px);
-  text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-  opacity: 1;
-}
-.navigation .nav-active #nav-li-ComeUp {
-  color: #e4d357;
-  transform: scale(1.2);
-  letter-spacing: 1px;
-  transform: translateX(5px);
-  text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-  opacity: 1;
 }
 .navigation .nav-portfolio {
   display: flex;
-  width: 200px;
 }
 .navigation .nav-portfolio:hover .nav-projects,
 .navigation .nav-portfolio .nav-projects:hover {
@@ -146,49 +114,14 @@ main {
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateX(65px);
   transition: 0.3s;
-  width: 200px;
+  width: -moz-max-content;
+  width: max-content;
+  padding-left: 30px;
 }
 .navigation .nav-portfolio .nav-projects li {
   transition: 0.3s;
-}
-.navigation #nav-li-nintendo:hover {
-  opacity: 1;
-  color: #E60012;
-  transform: scale(1.2);
-  letter-spacing: 1px;
-  transform: translateX(5px);
-  text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-}
-.navigation #nav-li-ScottoDiCesare:hover {
-  opacity: 1;
-  color: #0E0E0E;
-  transform: scale(1.2);
-  letter-spacing: 1px;
-  transform: translateX(5px);
-  text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-}
-.navigation #nav-li-YourResto:hover {
-  color: #b36700;
-  transform: scale(1.2);
-  letter-spacing: 1px;
-  transform: translateX(5px);
-  text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-}
-.navigation #nav-li-YourBlog:hover {
-  color: #008D1F;
-  transform: scale(1.2);
-  letter-spacing: 1px;
-  transform: translateX(5px);
-  text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-}
-.navigation #nav-li-ComeUp:hover {
-  color: #e4d357;
-  transform: scale(1.2);
-  letter-spacing: 1px;
-  transform: translateX(5px);
-  text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .home {
@@ -610,6 +543,11 @@ main {
     left: 80px;
   }
 }
+@media screen and (max-height: 739px) {
+  .logo {
+    display: none;
+  }
+}
 
 .project {
   position: absolute;
@@ -641,32 +579,6 @@ main {
   .project .cercle-1 {
     left: -500px;
   }
-}
-.project .navigation {
-  top: 5px;
-  left: 60%;
-  font-size: 1.1rem;
-  line-height: 20px;
-  transform: translateY(-100%);
-  animation: navProject 1s ease forwards;
-}
-@media screen and (max-width: 650px) {
-  .project .navigation {
-    left: 70%;
-  }
-}
-@keyframes navProject {
-  to {
-    transform: translateY(0);
-  }
-}
-.project .navigation:before {
-  left: -120px;
-  top: -250px;
-}
-.project .navigation .nav-projects {
-  transform: translateX(67px);
-  padding: 0 20px;
 }
 .project .project-main {
   width: 90%;

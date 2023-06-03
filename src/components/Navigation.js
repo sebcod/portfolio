@@ -11,7 +11,7 @@ const Navigation = (props) => {
         className="cercle-navigation"
         style={{
           border: "1px solid " + currentProject.color,
-          background: "transparent",
+          // background: "transparent",
         }}
       ></span>
 

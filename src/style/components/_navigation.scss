@@ -1,127 +1,65 @@
 .navigation {
-  border: solid;
-  padding: 10px;
   position: absolute;
-  top: 2rem;
-  left: 2rem;
-  font-size: 1.4rem;
-  line-height: 28px;
-  width: 100px;
-  //z-index: 10;
+  top: 20px;
+  left: calc(50% + 20px);
+  transform: translateY(-150%);
+  font-size: 1.1rem;
+  line-height: 20px;
+  animation: navProject 1s ease forwards;
+  z-index: 10;
 
-  @media screen and (max-width: 430px) {
-    //left: 0px;
+  @media screen and (max-width: 1030px) {
+    left: 150px;
   }
 
+  @media screen and (max-width: 430px) {
+    top: 50px;
+    left: 50px;
+  }
 
-  //color: $color-4;
+  @media screen and (max-height: 739px) {
+    display: none;
+  }
 
-
-  ul {
-    opacity: 1;
-
-    li {
-      transition: .3s;
+  @keyframes navProject {
+    to {
+      transform: translateY(0);
     }
   }
 
-  ul:hover li:not(:hover) {
-    opacity: 1;
-    // color: $color-4
+  ul li {
+    transition: .3s;
   }
 
   ul:hover li:hover {
-    //color: $color-4;
-    opacity: 1;
-    // transform: scale(1.2);
-    // letter-spacing: 1px;
-    transform: translateX(2px);
-    // text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(5px);
   }
 
   .cercle-navigation {
     position: absolute;
+    top: -120px;
+    left: -20px;
+    transform: translate(-50%, -50%);
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    background: $color-2;
-    opacity: 50%;
-    top: -300px;
-    left: -260px;
+    opacity: 100%;
     z-index: -1;
-    animation: navAnim 20s infinite alternate;
+    animation: navAnim 10s infinite alternate;
 
     @keyframes navAnim {
-      50% {
-        transform: scale(1.2);
+      0% {
+        transform: translate(-50%, -50%) scale(1.2);
       }
 
       100% {
-        transform: scale(1);
+        transform: translate(-50%, -50%) scale(1);
       }
     }
-
-    @media screen and (max-width: 430px) {
-      height: 50px;
-      width: 50px;
-    }
   }
-
-  .nav-active {
-    #nav-li-nintendo {
-      color: $color-Nintendo;
-      transform: scale(1.2);
-      letter-spacing: 1px;
-      transform: translateX(5px);
-      text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-      opacity: 1;
-    }
-
-    #nav-li-ScottoDiCesare {
-      color: $color-ScottoDiCesare;
-      transform: scale(1.2);
-      letter-spacing: 1px;
-      transform: translateX(5px);
-      text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-      opacity: 1;
-    }
-
-    #nav-li-YourResto {
-      color: $Color-YourResto;
-      transform: scale(1.2);
-      letter-spacing: 1px;
-      transform: translateX(5px);
-      text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-      opacity: 1;
-    }
-
-    #nav-li-YourBlog {
-      color: $color-YourBlog;
-      transform: scale(1.2);
-      letter-spacing: 1px;
-      transform: translateX(5px);
-      text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-      opacity: 1;
-    }
-
-    #nav-li-ComeUp {
-      color: $color-ComeUp;
-      transform: scale(1.2);
-      letter-spacing: 1px;
-      transform: translateX(5px);
-      text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-      opacity: 1;
-    }
-  }
-
-
 
   .nav-portfolio {
-    //cursor: pointer;
     display: flex;
-    //transition: .5s;
-    width: 200px;
-
 
     &:hover .nav-projects,
     .nav-projects:hover {
@@ -134,55 +72,14 @@
       position: absolute;
       visibility: hidden;
       opacity: 0;
-      transform: translateX(100px);
+      transform: translateX(65px);
       transition: .3s;
-      width: 200px;
+      width: max-content;
+      padding-left: 30px;
 
       li {
         transition: .3s;
       }
     }
-  }
-
-  #nav-li-nintendo:hover {
-    opacity: 1;
-    color: $color-Nintendo;
-    transform: scale(1.2);
-    letter-spacing: 1px;
-    transform: translateX(5px);
-    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-  }
-
-  #nav-li-ScottoDiCesare:hover {
-    opacity: 1;
-    color: $color-ScottoDiCesare;
-    transform: scale(1.2);
-    letter-spacing: 1px;
-    transform: translateX(5px);
-    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-  }
-
-  #nav-li-YourResto:hover {
-    color: $Color-YourResto;
-    transform: scale(1.2);
-    letter-spacing: 1px;
-    transform: translateX(5px);
-    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-  }
-
-  #nav-li-YourBlog:hover {
-    color: $color-YourBlog;
-    transform: scale(1.2);
-    letter-spacing: 1px;
-    transform: translateX(5px);
-    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
-  }
-
-  #nav-li-ComeUp:hover {
-    color: $color-ComeUp;
-    transform: scale(1.2);
-    letter-spacing: 1px;
-    transform: translateX(5px);
-    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
   }
 }
