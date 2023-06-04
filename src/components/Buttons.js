@@ -6,18 +6,20 @@ const Buttons = (props) => {
   const [currentProject] = useState(projectsData[props.projectNumber]);
   return (
     <div className="scroll-bottom">
-      {props.projectNumber === undefined && props.right && (
-        <NavLink to={props.right} className="right hover">
-          <span>&#10093;</span>
-        </NavLink>
-      )}
       {props.projectNumber !== undefined && props.left && (
         <NavLink to={props.left} className="left hover">
           <span style={{ color: currentProject.color }}>&#10092;</span>
         </NavLink>
       )}
       {props.projectNumber !== undefined && props.right && (
-        <NavLink to={props.right} className="right hover">
+        <NavLink
+          to={props.right}
+          className={
+            currentProject.id === 0
+              ? "right hover scroll-bottomHome"
+              : "right hover"
+          }
+        >
           <span style={{ color: currentProject.color }}>&#10093;</span>
         </NavLink>
       )}

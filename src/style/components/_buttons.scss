@@ -15,6 +15,13 @@
       top: 80%
     }
 
+    &.scroll-bottomHome {
+      @media screen and (max-width: 738px) {
+        top: 50%;
+        right: 10px;
+      }
+    }
+
     span {
       line-height: 1.5;
     }

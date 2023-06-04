@@ -16,6 +16,12 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  cursor: none;
+}
+@media only screen and (max-width: 1200px) {
+  * {
+    cursor: pointer;
+  }
 }
 
 html {
@@ -156,10 +162,10 @@ main {
   }
 }
 .home .home-main .img-content img {
-  -o-object-position: 0%;
-     object-position: 0%;
   width: 100%;
   height: 100%;
+  position: relative;
+  top: 3px;
   border-radius: 20px;
 }
 .home .home-main .main-content {
@@ -255,6 +261,12 @@ main {
 @media screen and (max-width: 738px) {
   .scroll-bottom a {
     top: 80%;
+  }
+}
+@media screen and (max-width: 738px) {
+  .scroll-bottom a.scroll-bottomHome {
+    top: 50%;
+    right: 10px;
   }
 }
 .scroll-bottom a span {
@@ -717,7 +729,6 @@ main {
 }
 .project .project-main .img-content .img-container {
   border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.26);
   max-width: 800px;
   overflow: hidden;
   position: relative;
@@ -729,15 +740,12 @@ main {
   transform: translateY(0);
 }
 .project .project-main .img-content .img-container img {
-  -o-object-fit: center;
-     object-fit: center;
-  -o-object-position: 0%;
-     object-position: 0%;
   width: 100%;
   height: 100%;
   position: absolute;
   transition: 0.4s ease-out;
   position: relative;
+  top: 3px;
   cursor: none;
 }
 .project .project-main .img-content .img-container img:hover,
