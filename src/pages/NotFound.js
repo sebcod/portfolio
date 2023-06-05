@@ -1,14 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Mouse from "../components/Mouse";
 
 const NotFound = () => {
   return (
     <div className="notFound">
+      <Mouse projectNumber={0} />
       <div className="not-Found-content">
-        <h2>Erreur 404</h2>
+        <h2>Not found</h2>
         <NavLink to="/">
           <h3>
-            Retour à l'acceuil <i className="fas fa-home"></i>
+            Return to home page <i className="fas fa-home"></i>
           </h3>
         </NavLink>
       </div>

@@ -3,7 +3,6 @@
   top: 20px;
   left: calc(50% - 50px);
   transform: translate(-50%, -150%);
-
   animation: logoProject 1s ease forwards;
 
   @keyframes logoProject {
@@ -14,7 +13,8 @@
 
   @media screen and (max-width: 1030px) {
     //transform: translate(0%, 0%);
-    left: 80px;
+    left: 15%;
+    top: 40px;
   }
 
   @media screen and (max-height: 739px) {
